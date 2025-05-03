@@ -1,4 +1,4 @@
-# Math PowerPoint Plan Reason MCP AI
+# Math PowerPoint MCP AI Agent
 This project implements an intelligent agent system that combines mathematical calculations with PowerPoint presentation generation using a multi-layer architecture. The system demonstrates advanced planning and reasoning capabilities through its modular design.
 
 
