@@ -1,0 +1,438 @@
+
+🤖 [agent] [memory.py] [__init__] [INFO]
+⏰ 2025-05-03 22:39:28,254 💬 Message: Memory layer initialized
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,254 💬 Message: === Starting New Attempt ===
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,254 💬 Message: Retry count: 0
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [reset] [INFO]
+⏰ 2025-05-03 22:39:28,254 💬 Message: Resetting memory state
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Session initialized successfully
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [__init__] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Perception layer initialized
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [__init__] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Decision layer initialized
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [__init__] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Action layer initialized
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Agent layers initialized
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [get_available_tools] [INFO]
+⏰ 2025-05-03 22:39:28,555 💬 Message: Getting available tools
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,558 💬 Message: Available tools loaded: 23 tools found
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,558 💬 Message: === Starting Task Execution ===
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,558 💬 Message: Initial Query: Find the ASCII values of characters in NARENDRA and then return sum of exponentials of those values. 
+                        Also, create a PowerPoint presentation showing the Final Answer inside a rectangle box.
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:28,558 💬 Message: 
+--- Iteration 1 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:39:29,458 💬 Message: Generated response for next action: FUNCTION_CALL:strings_to_chars_to_int|NARENDRA
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Generated Action: FUNCTION_CALL:strings_to_chars_to_int|NARENDRA
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Executing function: strings_to_chars_to_int
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Preparing arguments for strings_to_chars_to_int
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Tool schema: {'$defs': {'StringInput': {'properties': {'string': {'description': 'Input string', 'title': 'String', 'type': 'string'}}, 'required': ['string'], 'title': 'StringInput', 'type': 'object'}}, 'properties': {'input': {'$ref': '#/$defs/StringInput'}}, 'required': ['input'], 'title': 'strings_to_chars_to_intArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:39:29,459 💬 Message: Executing function strings_to_chars_to_int with arguments {'input': {'string': 'NARENDRA'}}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:29,461 💬 Message: Function result: meta=None content=[TextContent(type='text', text='{"result": [78, 65, 82, 69, 78, 68, 82, 65]}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:39:29,461 💬 Message: State updated, iteration: 1
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:29,461 💬 Message: Iteration 1 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:29,461 💬 Message: 
+--- Iteration 2 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:39:30,214 💬 Message: Generated response for next action: FUNCTION_CALL:int_list_to_exponential_sum|[78,65,82,69,78,68,82,65]
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:30,214 💬 Message: Generated Action: FUNCTION_CALL:int_list_to_exponential_sum|[78,65,82,69,78,68,82,65]
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:39:30,214 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:30,214 💬 Message: Executing function: int_list_to_exponential_sum
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:30,215 💬 Message: Preparing arguments for int_list_to_exponential_sum
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:30,215 💬 Message: Tool schema: {'$defs': {'ListInput': {'properties': {'l': {'description': 'List of numbers', 'items': {'type': 'integer'}, 'title': 'L', 'type': 'array'}}, 'required': ['l'], 'title': 'ListInput', 'type': 'object'}}, 'properties': {'input': {'$ref': '#/$defs/ListInput'}}, 'required': ['input'], 'title': 'int_list_to_exponential_sumArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:39:30,215 💬 Message: Executing function int_list_to_exponential_sum with arguments {'input': {'l': [78, 65, 82, 69, 78, 68, 82, 65]}}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:30,220 💬 Message: Function result: meta=None content=[TextContent(type='text', text='{"result": 8.337975261230336e+35}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:39:30,220 💬 Message: State updated, iteration: 2
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:30,220 💬 Message: Iteration 2 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:30,220 💬 Message: 
+--- Iteration 3 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Generated response for next action: POWERPOINT:open_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Generated Action: POWERPOINT:open_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Executing PowerPoint command: open_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Preparing arguments for open_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Tool schema: {'properties': {}, 'title': 'open_powerpointArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:39:31,019 💬 Message: Executing function open_powerpoint with arguments {}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:51,262 💬 Message: PowerPoint command result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "PowerPoint opened successfully with a new presentation", "annotations": null}]}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:39:51,262 💬 Message: State updated, iteration: 3
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:51,262 💬 Message: Iteration 3 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:51,262 💬 Message: 
+--- Iteration 4 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:39:53,258 💬 Message: Generated response for next action: POWERPOINT:draw_rectangle|2|2|7|5
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:53,258 💬 Message: Generated Action: POWERPOINT:draw_rectangle|2|2|7|5
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:39:53,259 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:39:53,259 💬 Message: Executing PowerPoint command: draw_rectangle
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:53,259 💬 Message: Preparing arguments for draw_rectangle
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:39:53,259 💬 Message: Tool schema: {'$defs': {'RectangleInput': {'properties': {'x1': {'description': 'Starting X coordinate', 'maximum': 8, 'minimum': 1, 'title': 'X1', 'type': 'integer'}, 'y1': {'description': 'Starting Y coordinate', 'maximum': 8, 'minimum': 1, 'title': 'Y1', 'type': 'integer'}, 'x2': {'description': 'Ending X coordinate', 'maximum': 8, 'minimum': 1, 'title': 'X2', 'type': 'integer'}, 'y2': {'description': 'Ending Y coordinate', 'maximum': 8, 'minimum': 1, 'title': 'Y2', 'type': 'integer'}}, 'required': ['x1', 'y1', 'x2', 'y2'], 'title': 'RectangleInput', 'type': 'object'}}, 'properties': {'input': {'$ref': '#/$defs/RectangleInput'}}, 'required': ['input'], 'title': 'draw_rectangleArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:39:53,259 💬 Message: Executing function draw_rectangle with arguments {'input': {'x1': 2, 'y1': 2, 'x2': 7, 'y2': 5}}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:06,495 💬 Message: PowerPoint command result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "Rectangle drawn successfully from (2,2) to (7,5)", "annotations": null}]}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:40:06,496 💬 Message: State updated, iteration: 4
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:06,496 💬 Message: Iteration 4 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:06,496 💬 Message: 
+--- Iteration 5 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:40:07,369 💬 Message: Generated response for next action: POWERPOINT:add_text_in_powerpoint|Final Result - 8.337975261230336e+35
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:07,369 💬 Message: Generated Action: POWERPOINT:add_text_in_powerpoint|Final Result - 8.337975261230336e+35
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:40:07,369 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:07,369 💬 Message: Executing PowerPoint command: add_text_in_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:40:07,369 💬 Message: Preparing arguments for add_text_in_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:40:07,370 💬 Message: Tool schema: {'$defs': {'PowerPointTextInput': {'properties': {'text': {'description': 'Text to add to the PowerPoint slide', 'title': 'Text', 'type': 'string'}}, 'required': ['text'], 'title': 'PowerPointTextInput', 'type': 'object'}}, 'properties': {'input': {'$ref': '#/$defs/PowerPointTextInput'}}, 'required': ['input'], 'title': 'add_text_in_powerpointArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:40:07,370 💬 Message: Executing function add_text_in_powerpoint with arguments {'input': {'text': 'Final Result - 8.337975261230336e+35'}}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:24,571 💬 Message: PowerPoint command result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "Text added successfully: Final Result - 8.337975261230336e+35", "annotations": null}]}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:40:24,571 💬 Message: State updated, iteration: 5
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:24,571 💬 Message: Iteration 5 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:24,572 💬 Message: 
+--- Iteration 6 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:40:25,282 💬 Message: Generated response for next action: POWERPOINT:close_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:25,282 💬 Message: Generated Action: POWERPOINT:close_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:40:25,283 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:25,283 💬 Message: Executing PowerPoint command: close_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:40:25,283 💬 Message: Preparing arguments for close_powerpoint
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [_prepare_arguments] [INFO]
+⏰ 2025-05-03 22:40:25,283 💬 Message: Tool schema: {'properties': {}, 'title': 'close_powerpointArguments', 'type': 'object'}
+-------------------------------------------
+
+
+🤖 [agent] [action.py] [execute_function] [INFO]
+⏰ 2025-05-03 22:40:25,283 💬 Message: Executing function close_powerpoint with arguments {}
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:27,327 💬 Message: PowerPoint command result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "PowerPoint closed successfully", "annotations": null}]}', annotations=None)] isError=False
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:40:27,328 💬 Message: State updated, iteration: 6
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:27,328 💬 Message: Iteration 6 completed
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:27,328 💬 Message: 
+--- Iteration 7 ---
+-------------------------------------------
+
+
+🤖 [agent] [decision.py] [generate_next_action] [INFO]
+⏰ 2025-05-03 22:40:28,107 💬 Message: Generated response for next action: FINAL_ANSWER:[8.337975261230336e+35]
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:28,107 💬 Message: Generated Action: FINAL_ANSWER:[8.337975261230336e+35]
+-------------------------------------------
+
+
+🤖 [agent] [perception.py] [parse_response] [INFO]
+⏰ 2025-05-03 22:40:28,107 💬 Message: Parsing response
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:28,107 💬 Message: No action needed for response type: final
+-------------------------------------------
+
+
+🤖 [agent] [memory.py] [update_state] [INFO]
+⏰ 2025-05-03 22:40:28,108 💬 Message: State updated, iteration: 7
+-------------------------------------------
+
+
+🤖 [agent] [agent.py] [main] [INFO]
+⏰ 2025-05-03 22:40:28,108 💬 Message: Task completed successfully
+-------------------------------------------
+
